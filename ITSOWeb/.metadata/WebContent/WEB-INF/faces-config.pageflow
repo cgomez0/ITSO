@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13925165537120" configfile="/ITSOWeb/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="goodbye" x="576" y="588" id="pf13925262822113" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf139256075901210" inlinks="pf139256075901211" path="/goodbye.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="visit" x="864" y="408" id="pf13925262822116" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf139256075901212 pf139256075901211" inlinks="pf139256075901213" path="/visit.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="input" x="231" y="408" id="pf13925262822119" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf139256075901213" inlinks="pf139256075901212 pf139256075901210" path="/input.jsp"/>
+  <links id="pf139256075901212" target="pf13925262822119" source="pf13925262822116" outcome="clear"/>
+  <links id="pf139256075901213" target="pf13925262822116" source="pf13925262822119" outcome="submit"/>
+  <links id="pf139256075901211" target="pf13925262822113" source="pf13925262822116" outcome="goodbye"/>
+  <links id="pf139256075901210" target="pf13925262822119" source="pf13925262822113" outcome="clear"/>
+</pageflow:Pageflow>

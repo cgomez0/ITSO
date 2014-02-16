@@ -10,7 +10,7 @@
 <body>
 <f:view>
 	<h:form>
-		<h2>Hello, #{userManagedBean.name } from #{userManagedBrean.location }</h2>
+		<h2>Hello, #{userManagedBean.name } from #{userManagedBean.location }</h2>
 		<br />
 		<h:commandButton action="#{userManagedBean.clear }" value="Go Back" />
 		<br />
